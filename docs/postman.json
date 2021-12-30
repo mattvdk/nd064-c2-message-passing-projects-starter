@@ -1,0 +1,731 @@
+Request
+http://localhost:5000/api/persons
+
+Response
+[
+    {
+        "id": 5,
+        "last_name": "Fargo",
+        "first_name": "Taco",
+        "company_name": "Alpha Omega Upholstery"
+    },
+    {
+        "id": 6,
+        "last_name": "Shader",
+        "first_name": "Frank",
+        "company_name": "USDA"
+    },
+    {
+        "id": 1,
+        "last_name": "Trexler",
+        "first_name": "Pam",
+        "company_name": "Hampton, Hampton and McQuill"
+    },
+    {
+        "id": 8,
+        "last_name": "Badman",
+        "first_name": "Paul",
+        "company_name": "Paul Badman & Associates"
+    },
+    {
+        "id": 9,
+        "last_name": "Spring",
+        "first_name": "Otto",
+        "company_name": "The Chicken Sisters Restaurant"
+    }
+]
+
+--------------------------------------------------------------------------------------
+Request
+http://localhost:5000/api/persons/1
+
+Response
+{
+    "id": 1,
+    "last_name": "Trexler",
+    "first_name": "Pam",
+    "company_name": "Hampton, Hampton and McQuill"
+}
+
+--------------------------------------------------------------------------------------
+Request
+http://localhost:5000/api/persons/1/connection?start_date=2020-01-01&end_date=2020-12-31&distance=10
+
+Response
+[
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 31,
+            "longitude": "37.553441",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290524",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 31,
+            "longitude": "37.553441",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290524",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 31,
+            "longitude": "37.553441",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290524",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 30,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 34,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 57,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 9,
+            "last_name": "Spring",
+            "first_name": "Otto",
+            "company_name": "The Chicken Sisters Restaurant"
+        },
+        "location": {
+            "id": 65,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 9
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 66,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 8,
+            "last_name": "Badman",
+            "first_name": "Paul",
+            "company_name": "Paul Badman & Associates"
+        },
+        "location": {
+            "id": 67,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 8
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 68,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 30,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 34,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 57,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 9,
+            "last_name": "Spring",
+            "first_name": "Otto",
+            "company_name": "The Chicken Sisters Restaurant"
+        },
+        "location": {
+            "id": 65,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 9
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 66,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 8,
+            "last_name": "Badman",
+            "first_name": "Paul",
+            "company_name": "Paul Badman & Associates"
+        },
+        "location": {
+            "id": 67,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 8
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 68,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 30,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 34,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 57,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 9,
+            "last_name": "Spring",
+            "first_name": "Otto",
+            "company_name": "The Chicken Sisters Restaurant"
+        },
+        "location": {
+            "id": 65,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 9
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 66,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 8,
+            "last_name": "Badman",
+            "first_name": "Paul",
+            "company_name": "Paul Badman & Associates"
+        },
+        "location": {
+            "id": 67,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 8
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 68,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 30,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 34,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 57,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 9,
+            "last_name": "Spring",
+            "first_name": "Otto",
+            "company_name": "The Chicken Sisters Restaurant"
+        },
+        "location": {
+            "id": 65,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 9
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 66,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 8,
+            "last_name": "Badman",
+            "first_name": "Paul",
+            "company_name": "Paul Badman & Associates"
+        },
+        "location": {
+            "id": 67,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 8
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 68,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 30,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 34,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 57,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 9,
+            "last_name": "Spring",
+            "first_name": "Otto",
+            "company_name": "The Chicken Sisters Restaurant"
+        },
+        "location": {
+            "id": 65,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 9
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 66,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 8,
+            "last_name": "Badman",
+            "first_name": "Paul",
+            "company_name": "Paul Badman & Associates"
+        },
+        "location": {
+            "id": 67,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 8
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 68,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 30,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 34,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 57,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 9,
+            "last_name": "Spring",
+            "first_name": "Otto",
+            "company_name": "The Chicken Sisters Restaurant"
+        },
+        "location": {
+            "id": 65,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 9
+        }
+    },
+    {
+        "person": {
+            "id": 5,
+            "last_name": "Fargo",
+            "first_name": "Taco",
+            "company_name": "Alpha Omega Upholstery"
+        },
+        "location": {
+            "id": 66,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 5
+        }
+    },
+    {
+        "person": {
+            "id": 8,
+            "last_name": "Badman",
+            "first_name": "Paul",
+            "company_name": "Paul Badman & Associates"
+        },
+        "location": {
+            "id": 67,
+            "longitude": "37.55363",
+            "creation_time": "2020-07-07T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 8
+        }
+    },
+    {
+        "person": {
+            "id": 6,
+            "last_name": "Shader",
+            "first_name": "Frank",
+            "company_name": "USDA"
+        },
+        "location": {
+            "id": 68,
+            "longitude": "37.55363",
+            "creation_time": "2020-08-15T10:37:06",
+            "latitude": "-122.290883",
+            "person_id": 6
+        }
+    }
+]

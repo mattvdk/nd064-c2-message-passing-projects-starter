@@ -1,0 +1,16 @@
+# Message Passing Strategies and Usage
+## 1. REST
+REST is an HTTP-based interface for passing messages. It allows modelling a hierarchical representation of
+the application state and allows a lot of flexibility.
+This will be used for communicating with the Frontend application.
+The location consumer will subscribe to the Kafka location topic (see below) and call the REST location-api in order to feed the data to the database.
+The location-api can be replaced by a direct database connection from the location consumer as a future enhancement.
+
+## 2. gRPC
+gRPC is a highly efficient means to transport data adhering to a predefined structure. This is particularly 
+useful for large volume data, e.g. that from the mobile devices in the UdaConnect app.
+This will hence be used for the mobile devices to send the location data.
+
+## 3. Kafka
+Kafka is a message broker and allows queuing high volume data asynchronously from a large number of producers and consumers of this data.
+Kafka is used to ingest the location data and to feed it to the location data consumer.
